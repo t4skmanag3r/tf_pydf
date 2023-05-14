@@ -20,8 +20,6 @@ pip install tf_pydf
 ```python
 from tf_pydf import Model
 
-# Create a new instance of the document model
-
 documents = {
     "fruits":
         ["apple", "banana", "orange"],
@@ -31,7 +29,9 @@ documents = {
         ["tagliatelle", "rotini", "rigatoni"],
     }
 
+# Create a new instance of the document model
 model = Model()
+
 # Add documents to the model
 for doc_id, doc_content in documents.items():
     model.add_doc(doc_id, doc_content)
